@@ -1,8 +1,9 @@
-"use strict"
+"use strict";
+
 var pow = function() {
   var a = prompt('enter an integer');
   var x = prompt('enter an integer');
-  var check = !isNaN(parseFloat(a)) && !isNaN(parseFloat(x)) && (~~a == a) && (~~x == x);
+  var check = !isNaN(parseFloat(a)) && !isNaN(parseFloat(x)) && (Math.ceil(a) == a) && (Math.ceil(x) == x);
 
   if (check) {
     var result = 1;
